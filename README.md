@@ -1,4 +1,28 @@
-# Hello World
+# Figma Pilot - AI驱动的Figma设计助手
+
+一个智能的Figma插件，通过AI技术帮助设计师快速创建和修改设计元素。只需用自然语言描述你的需求，AI就会自动生成相应的Figma代码并执行。
+
+## ✨ 主要功能
+
+- **自然语言交互**：用中文或英文描述设计需求，AI自动理解并执行
+- **智能图形创建**：快速创建圆形、矩形、文本等基础图形
+- **属性智能修改**：修改颜色、尺寸、位置等属性，AI会智能判断只修改已存在的属性
+- **批量操作**：同时处理多个选中的设计元素
+- **代码预览**：查看AI生成的代码，学习Figma API的使用
+
+## 🚀 使用示例
+
+- "创建一个直径为100的红色圆形"
+- "将选中的元素颜色改为蓝色"
+- "把这些文字的字体大小改为24"
+- "创建一个200x100的矩形，填充颜色为#FF6B6B"
+
+## 🛠 技术特性
+
+- 基于React和TypeScript构建
+- 智能的AI提示词工程，确保生成安全有效的代码
+- 自动检测操作类型（创建vs修改），避免意外添加不需要的属性
+- 支持十六进制颜色值自动转换为RGB格式
 
 ## Development guide
 
@@ -13,17 +37,15 @@
 
 To build the plugin:
 
-```
 $ npm run build
-```
+
 
 This will generate a [`manifest.json`](https://figma.com/plugin-docs/manifest/) file and a `build/` directory containing the JavaScript bundle(s) for the plugin.
 
 To watch for code changes and rebuild the plugin automatically:
 
-```
 $ npm run watch
-```
+
 
 ### Install the plugin
 
@@ -36,6 +58,17 @@ $ npm run watch
 Use `console.log` statements to inspect values in your code.
 
 To open the developer console, search for and run `Show/Hide Console` via the Quick Actions search bar.
+
+## 📝 使用说明
+
+1. 安装并启动插件
+2. 在输入框中用自然语言描述你的设计需求
+3. 点击"执行"按钮，AI会自动生成并执行相应的代码
+4. 可以点击"查看生成的代码"来学习Figma API的使用
+
+## 🤝 贡献
+
+欢迎提交Issue和Pull Request来改进这个项目！
 
 ## See also
 
